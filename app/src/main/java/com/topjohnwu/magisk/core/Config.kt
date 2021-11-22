@@ -110,6 +110,7 @@ object Config : PreferenceModel, DBConfig {
             Value.DEFAULT_CHANNEL
 
     @JvmStatic var keepVerity = false
+    @JvmStatic var keepVbmetaVerity = false
     @JvmStatic var keepEnc = false
     @JvmStatic var recovery = false
 

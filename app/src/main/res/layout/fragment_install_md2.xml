@@ -98,6 +98,15 @@
                             android:checked="@={Config.keepVerity}"
                             android:text="@string/keep_dm_verity"
                             tools:checked="true" />
+                        
+                        <CheckBox
+                            style="@style/WidgetFoundation.Checkbox"
+                            gone="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="@={Config.keepVbmetaVerity}"
+                            android:text="@string/keep_vbmeta_verity"
+                            tools:checked="true" />
 
                         <CheckBox
                             style="@style/WidgetFoundation.Checkbox"
