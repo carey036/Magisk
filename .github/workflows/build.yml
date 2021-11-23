@@ -22,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ ubuntu-latest, windows-latest, macos-latest ]
+        os: [ ubuntu-latest ]
     env:
       NDK_CCACHE: ${{ github.workspace }}/ccache
       CCACHE_DIR: ${{ github.workspace }}/.ccache
@@ -73,11 +73,6 @@ jobs:
         run: |
           ./ccache -zp
           python build.py -vr all
-
-      - name: Build debug
-        run: |
-          python build.py -v all
-          ./ccache -s
 
       - name: Stop gradle daemon
         run: ./gradlew --stop

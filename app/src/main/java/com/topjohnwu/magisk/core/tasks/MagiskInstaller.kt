@@ -362,6 +362,7 @@ abstract class MagiskInstallImpl protected constructor(
             "KEEPFORCEENCRYPT=${Config.keepEnc} " +
             "KEEPVERITY=${Config.keepVerity} " +
             "RECOVERYMODE=${Config.recovery} " +
+            "KEEPVBMETAVERITY=${Config.keepVbmetaVerity} " +
             "sh boot_patch.sh $srcBoot")
 
         if (!cmds.sh().isSuccess)
